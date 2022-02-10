@@ -1,3 +1,7 @@
+import torch 
+from torch import nn
+
+
 class KDLoss(nn.Module):
     def __init__(self, T: float, alpha: float) -> None:
         super(KDLoss, self).__init__()
