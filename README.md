@@ -26,3 +26,17 @@ loss2 = CrossEntropy(softmax(Z_student / 1), Y)
 ---------------------------------------------------------
 loss = alpha * (T ** 2) * loss1 + (1 - alpha) * loss2
 ```
+
+## Usage
+1. Train Teacher
+
+```bash
+python teacher_train.py --batch-size 64 --lr 0.01 --num-epochs 10 --device 'cuda:0'
+
+```
+
+2. Train Student
+
+```bash
+
+```
